@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 type Coin = {
@@ -17,7 +15,6 @@ type Coins = {
 const FPS = 60;
 const FRAME_DURATION = 1000 / FPS;
 let lastFrameTime = 0;
-let lag = 0;
 
 function App() {
   const [count, setCount] = useState(0);
