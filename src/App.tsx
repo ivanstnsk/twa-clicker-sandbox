@@ -18,7 +18,7 @@ let lastFrameTime = 0;
 
 function App() {
   const [count, setCount] = useState(0);
-  const [tap, setTap] = useState<number>(1);
+  const [tap] = useState<number>(1);
   const coinsRef = useRef<Coins>({
     coins: [],
   });
