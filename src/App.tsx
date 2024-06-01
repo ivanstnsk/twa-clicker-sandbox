@@ -107,7 +107,7 @@ function App() {
       </section>
       <section className="body">
         <button onClick={click} className="coin big">
-          ₴
+          <span className="sign">₴</span>
         </button>
       </section>
       <canvas id="canvas"></canvas>

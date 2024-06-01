@@ -46,16 +46,21 @@
 }
 .coin.big {
   border-width: 3vh;
-  width: 30vh;
-  height: 30vh;
   box-sizing: border-box;
+}
+.sign {
+  width: 25vh;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15vh;
+  color: rgb(240, 175, 55);
 }
 button.coin {
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  font-size: 15vh;
-  color: rgb(240, 175, 55);
 }
 button.coin:active {
   transform: scale(1.2);
