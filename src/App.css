@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.wrapper > .head {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-bottom: 1px solid gray;
+}
+.wrapper > .body {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.head > .balans {
+  font-size: 2rem;
+  font-weight: bolder;
+  user-select: none;
+}
+
+.coin {
+  display: block;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(240, 175, 55);
+  background-color: rgb(238, 245, 91);
+}
+
+.coin.small {
+  border-width: 3px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.coin.big {
+  border-width: 3vh;
+  width: 30vh;
+  height: 30vh;
+  box-sizing: border-box;
+}
+button.coin {
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 15vh;
+  color: rgb(240, 175, 55);
+}
+button.coin:active {
+  transform: scale(1.2);
+  transition: 0.1s;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+}
